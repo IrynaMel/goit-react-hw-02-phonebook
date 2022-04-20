@@ -33,12 +33,15 @@ class App extends React.Component {
       alert(`${name} is already in contacts`);
       return;
     }
+
     let id = nanoid();
+
     const contact = {
       id,
       name,
       number,
     };
+
     this.setState(prevState => ({
       contacts: [contact, ...prevState.contacts],
     }));

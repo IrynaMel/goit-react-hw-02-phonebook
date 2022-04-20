@@ -9,4 +9,9 @@ const Button = ({ id, onDelete }) => {
   );
 };
 
+Button.propTypes = {
+  id: PropTypes.string,
+  onDelete: PropTypes.func,
+};
+
 export default Button;
