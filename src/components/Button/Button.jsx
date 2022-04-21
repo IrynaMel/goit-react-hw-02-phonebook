@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import Buttons from './Button.styled';
 
-const Button = ({ id, onDelete }) => {
+const Button = ({ onDelete }) => {
   return (
-    <Buttons type="button" onClick={() => onDelete(id)}>
+    <Buttons type="button" onClick={onDelete}>
       Delete
     </Buttons>
   );

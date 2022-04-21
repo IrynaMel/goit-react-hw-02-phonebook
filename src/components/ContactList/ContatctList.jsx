@@ -9,7 +9,7 @@ const ContactList = ({ visible, onDelete }) => {
         {visible.map(({ id, name, number }) => (
           <Li key={id}>
             {name}: {number}
-            <Button onDelete={onDelete} id={id} />
+            <Button onDelete={() => onDelete(id)} />
           </Li>
         ))}
       </ul>
